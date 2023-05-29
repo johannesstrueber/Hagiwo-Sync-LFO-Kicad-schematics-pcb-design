@@ -35,5 +35,5 @@ Hence, this is only trying to put HAGIWOs circuit into Kicad to create a PCB. Yo
 **Font**
 - [Rocko – Casady & Greene](https://moorstation.org/typoasis/designers/casady_greene/r_z.htm)
 
-<img width="768" alt="Bildschirmfoto 2023-05-29 um 21 30 31" src="https://github.com/johannesstrueber/lfo/assets/45170421/02f46a26-cbb5-4228-9255-7ab61c52ddee">
-<img width="768" alt="Bildschirmfoto 2023-05-29 um 21 28 17" src="https://github.com/johannesstrueber/lfo/assets/45170421/b8386d8e-0c6e-4429-8926-f5fdc32857be">
+<img width="768" alt="Bildschirmfoto 2023-05-29 um 21 30 31" src="https://github.com/johannesstrueber/Hagiwo-Sync-LFO-Kicad-schematics-pcb-design/assets/45170421/8b85235a-9b94-4339-b28c-dbf3a68c4b22">
+<img width="768" alt="Bildschirmfoto 2023-05-29 um 21 28 17" src="https://github.com/johannesstrueber/Hagiwo-Sync-LFO-Kicad-schematics-pcb-design/assets/45170421/7cc7bce7-3cb5-473e-a1cd-20e071295d48">
