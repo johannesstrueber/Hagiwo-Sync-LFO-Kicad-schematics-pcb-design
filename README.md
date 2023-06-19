@@ -3,7 +3,34 @@
 
 In this repository, I digitalized HAGIWOs sketched schematics in Kicad and then created PCBs for the circuit and a front panel. I also created two design files. The first is for matching the drill holes of the panel with the placed components. The second is for labeling the components on the silkscreen layer of the panel.
 
-***This is a work-in-progress project. Actually, this is my first layout. Take nothing for granted. Currently, the first "revision" (or whatever it is even called) is in production.*** 
+***This is a work-in-progress project. Actually, this is my first layout. Take nothing for granted. The first revision is produced and some fixes are made in rev.02. Which i will order soon.*** 
+<br/><br/>
+**TODO** <br/>
+<ul>
+<li>BOM</li>
+<li>code refactor</li>
+<li>code or schematics wrong direction potis</li>
+</ul>
+
+<br/>
+
+**CHANGELOG** <br/>
+<br/>
+**rev0.2** <br/>
+<ul>
+<li> add missing 33k resistor for LED </li>
+<li> !!! changed pin order on 2x8 Connector </li>
+<li> resistors and capacitors now have values </li>
+<li> test version frontpanel in full copper layer is removed. Not necessary for JLCPCB </li>
+<li> larger gap setting for disc capacitors </li>
+</ul>
+
+**rev0.1** <br/>
+<ul>
+<li>first layout PRODUCED and working</li>
+</ul>
+
+<br/>
 
 Hence, this is only trying to put HAGIWOs circuit into Kicad to create a PCB. You can find more information about the layout and functionality [ + here](https://note.com/solder_state/n/n4c600f2431c3) 
 <br/>
@@ -35,5 +62,7 @@ Hence, this is only trying to put HAGIWOs circuit into Kicad to create a PCB. Yo
 **Font**
 - [Rocko – Casady & Greene](https://moorstation.org/typoasis/designers/casady_greene/r_z.htm)
 
-<img width="768" alt="Bildschirmfoto 2023-05-29 um 21 30 31" src="https://github.com/johannesstrueber/Hagiwo-Sync-LFO-Kicad-schematics-pcb-design/assets/45170421/8b85235a-9b94-4339-b28c-dbf3a68c4b22">
-<img width="768" alt="Bildschirmfoto 2023-05-29 um 21 28 17" src="https://github.com/johannesstrueber/Hagiwo-Sync-LFO-Kicad-schematics-pcb-design/assets/45170421/7cc7bce7-3cb5-473e-a1cd-20e071295d48">
+**Pictures of the produced rev 0.1**
+![IMG_9797 (1)](https://github.com/johannesstrueber/Hagiwo-Sync-LFO-Kicad-schematics-pcb-design/assets/45170421/c25686c6-26fb-4ed8-914e-01433c1cf53e)
+![IMG_9798 (1)](https://github.com/johannesstrueber/Hagiwo-Sync-LFO-Kicad-schematics-pcb-design/assets/45170421/a3338d4d-da37-4a1a-977b-d7cba15d1bb9)
+![IMG_9799 (1)](https://github.com/johannesstrueber/Hagiwo-Sync-LFO-Kicad-schematics-pcb-design/assets/45170421/0bfbbedc-62d9-4c7f-a594-a9986a85f2f6)
