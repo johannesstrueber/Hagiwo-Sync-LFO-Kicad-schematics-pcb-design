@@ -46012,7 +46012,7 @@
     (stroke (width 0.1) (type solid)) (layer "User.8") (tstamp ff9e8459-ca74-45c1-bbe4-dfaca46f4e80))
   (gr_line locked (start 32.078299 74.690318) (end 32.104292 74.83589)
     (stroke (width 0.1) (type solid)) (layer "User.8") (tstamp ffc1c936-e303-4d4e-96bd-f039bea6fc6c))
-  (gr_text "rev 0.1" (at 30 137) (layer "B.SilkS") (tstamp 149971dc-9542-49b2-b99c-a0902fa7835c)
+  (gr_text "rev 0.2" (at 30 137) (layer "B.SilkS") (tstamp 149971dc-9542-49b2-b99c-a0902fa7835c)
     (effects (font (size 0.8 0.8) (thickness 0.1) bold) (justify left bottom mirror))
   )
 
