@@ -1,3 +1,4 @@
+
 *.zip
 *.DS_Store
 *.pdf
@@ -16,3 +17,5 @@
 \#auto_saved_files\#
 *-backups*
 fp-info-cache
+
+*_autosave*

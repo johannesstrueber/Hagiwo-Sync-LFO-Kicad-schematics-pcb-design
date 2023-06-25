@@ -70,31 +70,31 @@ void loop()
   int WF = analogRead(WaveformIn);
   if (WF < 31)
   {
-    mode = 6; // steady
+    mode = 5;
   }
   else if (WF >= 31 && WF < 155)
   {
-    mode = 0; // saw1
+    mode = 4;
   }
   else if (WF >= 155 && WF < 352)
   {
-    mode = 1; // saw2
+    mode = 3;
   }
   else if (WF >= 352 && WF < 571)
   {
-    mode = 2; // sin
+    mode = 2;
   }
   else if (WF >= 571 && WF < 771)
   {
-    mode = 3; // tri
+    mode = 1;
   }
   else if (WF >= 771 && WF < 939)
   {
-    mode = 4; // squ
+    mode = 0;
   }
   else if (WF >= 939)
   {
-    mode = 5; // random
+    mode = 6;
   }
 
   //------------phase and internal clock set-------------------------------
@@ -116,31 +116,31 @@ void loop()
   int MD = analogRead(ModIn);
   if (MD < 31)
   {
-    mod = 0; // no modulation
+    mod = 6;
   }
   else if (MD >= 31 && MD < 155)
   {
-    mod = 1; // saw1
+    mod = 5;
   }
   else if (MD >= 155 && MD < 352)
   {
-    mod = 2; // saw2
+    mod = 4;
   }
   else if (MD >= 352 && MD < 571)
   {
-    mod = 3; // sin
+    mod = 3;
   }
   else if (MD >= 571 && MD < 771)
   {
-    mod = 4; // tri
+    mod = 2;
   }
   else if (MD >= 771 && MD < 939)
   {
-    mod = 5; // squ
+    mod = 1;
   }
   else if (MD >= 939)
   {
-    mod = 6; // random
+    mod = 0;
   }
 
   switch (mod)
@@ -176,7 +176,8 @@ void loop()
   //--------------amp set----------------
   amp = analogRead(AmpIn);
   amp = map(amp, 0, 1023, 1, 100);
-  amp_rate = (float)amp / 100;
+  amp_rate = ((float)amp / 100 - 1) * -1;
+  Serial.print(amp_rate);
 
   //------------external in judge-------------------------------
   if (ext_count > 160000)
