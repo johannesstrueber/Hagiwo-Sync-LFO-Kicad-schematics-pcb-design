@@ -10,6 +10,7 @@ In this repository, I digitalized HAGIWOs sketched schematics in Kicad and then 
 <li>BOM</li>
 <li>code refactor</li>
 <li><s>code or schematics wrong direction potis</s></li>
+<li><s>10 pin connector instead of 16 pin</s></li>
 </ul>
 
 <br/>
@@ -24,6 +25,7 @@ In this repository, I digitalized HAGIWOs sketched schematics in Kicad and then 
 <li> test version frontpanel in full copper layer is removed. Not necessary for JLCPCB </li>
 <li> larger gap setting for disc capacitors </li>
 <li> code wrong direction potis</li>
+<li> 10 pin connector instead of 16 pin</li>
 </ul>
 
 **rev0.1** <br/>
