@@ -9,7 +9,7 @@ In this repository, I digitalized HAGIWOs sketched schematics in Kicad and then 
 <ul>
 <li>BOM</li>
 <li>code refactor</li>
-<li>code or schematics wrong direction potis</li>
+<li><s>code or schematics wrong direction potis</s></li>
 </ul>
 
 <br/>
@@ -23,6 +23,7 @@ In this repository, I digitalized HAGIWOs sketched schematics in Kicad and then 
 <li> resistors and capacitors now have values </li>
 <li> test version frontpanel in full copper layer is removed. Not necessary for JLCPCB </li>
 <li> larger gap setting for disc capacitors </li>
+<li> code wrong direction potis</li>
 </ul>
 
 **rev0.1** <br/>
