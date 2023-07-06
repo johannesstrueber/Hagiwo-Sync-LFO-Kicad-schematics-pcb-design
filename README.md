@@ -69,6 +69,7 @@ Hence, this is only trying to put HAGIWOs circuit into Kicad to create a PCB. Yo
 
 
 **Pictures of the produced rev 0.1**
+<br/>
 ![IMG_9797 (1)](https://github.com/johannesstrueber/Hagiwo-Sync-LFO-Kicad-schematics-pcb-design/assets/45170421/c25686c6-26fb-4ed8-914e-01433c1cf53e)
 ![IMG_9798 (1)](https://github.com/johannesstrueber/Hagiwo-Sync-LFO-Kicad-schematics-pcb-design/assets/45170421/a3338d4d-da37-4a1a-977b-d7cba15d1bb9)
 ![IMG_9799 (1)](https://github.com/johannesstrueber/Hagiwo-Sync-LFO-Kicad-schematics-pcb-design/assets/45170421/0bfbbedc-62d9-4c7f-a594-a9986a85f2f6)
