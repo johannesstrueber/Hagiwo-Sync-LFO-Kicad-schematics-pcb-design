@@ -3,13 +3,13 @@
 
 In this repository, I digitalized HAGIWOs sketched schematics in Kicad and then created PCBs for the circuit and a front panel. I also created two design files. The first is for matching the drill holes of the panel with the placed components. The second is for labeling the components on the silkscreen layer of the panel.
 
-***This is a work-in-progress project. Actually, this is my first layout. Take nothing for granted. The first revision is produced and some fixes are made in rev.02. is ordered.*** 
+***This is a work-in-progress project. Actually, this is my first layout. Take nothing for granted. The second revision is produced.*** 
 <br/>
 <br/>
 **TODO** <br/>
 <ul>
 <li>BOM</li>
-<li>code for second inverted output </li>
+<li>code for second inverted output (is in WIP status)</li>
 <li><s>second inverted output pcb schematics</s></li>
 <li><s>code or schematics wrong direction potis</s></li>
 <li><s>10 pin connector instead of 16 pin</s></li>
@@ -19,6 +19,14 @@ In this repository, I digitalized HAGIWOs sketched schematics in Kicad and then 
 
 **CHANGELOG** <br/>
 <br/>
+
+**rev0.2.1** <br/>
+<ul>
+<li>I adjusted the drilling diameter to 7.2mm to fit the threads of some potentiometers, e.g., t18. The previous front panel was made for rv09 potentiometers, which don't have a larger thread drilling.</li>
+<li>the main pcb stays the same as 0.2.0</li>
+</ul>
+<br/>
+
 **rev0.2** <br/>
 <ul>
 <li> !!! changed pin order on connector </li>
@@ -68,16 +76,14 @@ Hence, this is only trying to put HAGIWOs circuit into Kicad to create a PCB. Yo
 - [Tiny – Jack Halten Fahnestock](https://velvetyne.fr/fonts/tiny/)
 <br/>
 
-**Pictures of the produced rev 0.1**
+**Pictures of the produced rev 0.2**
 <br/>
 <br/>
-![IMG_9797 (1)](https://github.com/johannesstrueber/Hagiwo-Sync-LFO-Kicad-schematics-pcb-design/assets/45170421/c25686c6-26fb-4ed8-914e-01433c1cf53e)
-![IMG_9798 (1)](https://github.com/johannesstrueber/Hagiwo-Sync-LFO-Kicad-schematics-pcb-design/assets/45170421/a3338d4d-da37-4a1a-977b-d7cba15d1bb9)
-![IMG_9799 (1)](https://github.com/johannesstrueber/Hagiwo-Sync-LFO-Kicad-schematics-pcb-design/assets/45170421/0bfbbedc-62d9-4c7f-a594-a9986a85f2f6)
+![front](https://github.com/johannesstrueber/Hagiwo-Sync-LFO-Kicad-schematics-pcb-design/assets/45170421/f4e17cb6-e002-42fd-b4b1-ccc52fe7f97e)
 <br/>
+![back](https://github.com/johannesstrueber/Hagiwo-Sync-LFO-Kicad-schematics-pcb-design/assets/45170421/988809d1-c227-4bc0-9ac9-e7544a4b1f00)
 <br/>
+![side](https://github.com/johannesstrueber/Hagiwo-Sync-LFO-Kicad-schematics-pcb-design/assets/45170421/ff226262-bc01-4fe4-8cb5-e82931ae124f)
 
-**Screenshot of the rev 0.2 frontpanel**
-<br/>
-<br/>
-![lfo](https://github.com/johannesstrueber/Hagiwo-Sync-LFO-Kicad-schematics-pcb-design/assets/45170421/dd79a395-9059-433a-b773-97a71a005fe2)
+
+
