@@ -1,6 +1,7 @@
 #include <FlexiTimer2.h>
 #include <avr/io.h>
 
+#define PWMInv 11
 #define PWMOut 10
 #define SyncIn 3
 #define WaveformIn 3
@@ -8,8 +9,8 @@
 #define PhaseIn 1
 #define ModIn 5
 
-unsigned int frq = 60000; // PWM周波数。60kHzあたりまで機能するが、マージンとって50kHzとする。
-float duty = 0.5;         // duty比率
+unsigned int frq = 50000;
+float duty = 0.5; // duty比率
 int count = 0;
 
 byte mode = 1; //
@@ -25,6 +26,7 @@ int set_freq = 1;  //
 int freq_max = 30; // 外部クロック周期(*100usec)
 int amp = 1;       // change pwm duty
 float amp_rate = 1.0;
+float amp_neg_rate = -1.0;
 int phase = 1;
 int mod = 0; // self modulation
 
@@ -52,19 +54,20 @@ const static word squ[1000] PROGMEM = {
 void setup()
 {
   pinMode(PWMOut, OUTPUT);
-  pinMode(SyncIn, INPUT);
+  pinMode(PWMInv, OUTPUT);
+  pinMode(3, INPUT);
 
   FlexiTimer2::set(5, 1.0 / 100000, timer_count); // 50usec/count
   FlexiTimer2::start();
 
   // for development
-  Serial.begin(9600);
+  //  Serial.begin(9600);
 }
 
 void loop()
 {
   old_ext_pulse = ext_pulse;
-  ext_pulse = digitalRead(SyncIn);
+  ext_pulse = digitalRead(3);
 
   //------------wave select-------------------------------
   int WF = analogRead(WaveformIn);
@@ -101,15 +104,21 @@ void loop()
   if (ext_injudge == 0)
   { // use internal clock , phase function off
     phase = 0;
-    //    freq_max = 1+(analogRead(1))/5;
-    int PH = analogRead(PhaseIn);
-    freq_max = 1 + 0.0007 * PH * PH;
+    // freq_max = 1 + (analogRead(1)) / 5;
+    freq_max = 1 + 0.0007 * analogRead(1) * analogRead(1);
+    if (freq_max > 1000)
+    {
+      freq_max = 1000;
+    }
+    else if (freq_max < 1)
+    {
+      freq_max = 1;
+    }
   }
 
   else if (ext_injudge == 1)
   { // use external clock , phase function on
-    int PH = analogRead(PhaseIn);
-    phase = map(PH, 0, 1023, 0, 999);
+    phase = map(analogRead(1), 0, 1023, 0, 999);
   }
 
   //------------selc modulation-------------------------------
@@ -174,10 +183,10 @@ void loop()
   }
 
   //--------------amp set----------------
-  amp = analogRead(AmpIn);
+  amp = analogRead(0);
   amp = map(amp, 0, 1023, 1, 100);
   amp_rate = ((float)amp / 100 - 1) * -1;
-  Serial.print(amp_rate);
+  amp_neg_rate = (float)amp / 100 - 1;
 
   //------------external in judge-------------------------------
   if (ext_count > 160000)
@@ -202,23 +211,26 @@ void loop()
   if (old_ext_pulse == 0 && ext_pulse == 1)
   { // 外部入力が有→無のとき
     ext_count = 0;
-    // count = 0;
+    count = 0;
   }
   // モード指定
   TCCR1A = 0b00100001;
-  TCCR1B = 0b00100001; // 分周比1
+  TCCR1B = 0b00000001; // 分周比1
+
+  TCCR2A = 0b00100001;
+  TCCR2B = 0b00000001; // 分周比1
 
   // TOP値指定
-  // OCR1A = (unsigned int)(16000000 / frq);
+  // 8000000 / 1 / 160 = 50000
+  // or 4900000 / 1 / 160 = 30625
+  OCR1A = (unsigned int)(160);
+  OCR1B = (unsigned int)(160 * duty * amp_rate);
 
-  // Duty比指定
-  OCR1B = (unsigned int)(16000000 / frq * duty * amp_rate);
+  OCR2A = (unsigned int)(160);
+  OCR2B = (unsigned int)(160 * duty * amp_neg_rate + 160);
 
-  // for development
-  Serial.print(ext_injudge);
-  //  Serial.print(",");
-  //  Serial.print(analogRead(5));
-  //  Serial.println("");
+  analogWrite(PWMOut, OCR1B);
+  analogWrite(PWMInv, OCR2B);
 }
 
 void timer_count()
@@ -278,5 +290,13 @@ void timer_count()
       duty = 1;
     }
   }
-  // analogWrite(PWMOut, (int)(duty*256));
+
+  if (duty > 1)
+  {
+    duty = 1;
+  }
+  if (duty < 0)
+  {
+    duty = 0;
+  }
 }
