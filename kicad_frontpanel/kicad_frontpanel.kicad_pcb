@@ -84,7 +84,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "../out/sync_lfo_fp_copper_0.2/")
+      (outputdirectory "../out/sync_lfo_fp_copper_0.2.1/")
     )
   )
 
@@ -129,7 +129,7 @@
       (stroke (width 0.15) (type solid)) (fill none) (layer "Cmts.User") (tstamp 2adf65a4-1819-47e2-98af-de05218456e6))
     (fp_circle (center 0 0) (end 6.65 0)
       (stroke (width 0.05) (type solid)) (fill none) (layer "F.CrtYd") (tstamp 068b206b-8133-4276-a379-9c8052ca6a36))
-    (pad "" np_thru_hole circle locked (at 0 0) (size 6.4 6.4) (drill 6.4) (layers "*.Cu" "*.Mask") (tstamp cb57b8ad-d965-4174-8d55-3cec9820f176))
+    (pad "" np_thru_hole circle locked (at 0 0) (size 7.2 7.2) (drill 7.2) (layers "*.Cu" "*.Mask") (tstamp cb57b8ad-d965-4174-8d55-3cec9820f176))
   )
 
   (footprint "MountingHole:MountingHole_6.4mm_M6" locked (layer "F.Cu")
@@ -150,7 +150,7 @@
       (stroke (width 0.15) (type solid)) (fill none) (layer "Cmts.User") (tstamp fbbe470f-4f6f-48bb-bdad-ae77ae289164))
     (fp_circle (center 0 0) (end 6.65 0)
       (stroke (width 0.05) (type solid)) (fill none) (layer "F.CrtYd") (tstamp 8da0fc70-7a5b-4518-9cef-234952ac6243))
-    (pad "" np_thru_hole circle locked (at 0 0) (size 6.4 6.4) (drill 6.4) (layers "*.Cu" "*.Mask") (tstamp 4b5e4858-bed3-46f4-868f-5ebf4a0fb252))
+    (pad "" np_thru_hole circle locked (at 0 0) (size 7.2 7.2) (drill 7.2) (layers "*.Cu" "*.Mask") (tstamp 4b5e4858-bed3-46f4-868f-5ebf4a0fb252))
   )
 
   (footprint "MountingHole:MountingHole_3.2mm_M3" locked (layer "F.Cu")
@@ -217,7 +217,7 @@
       (stroke (width 0.15) (type solid)) (fill none) (layer "Cmts.User") (tstamp cdfa73aa-6653-4347-9e23-21c4c3400e39))
     (fp_circle (center 0 0) (end 6.65 0)
       (stroke (width 0.05) (type solid)) (fill none) (layer "F.CrtYd") (tstamp 835906c2-559f-497f-be01-a7a5db4148b2))
-    (pad "" np_thru_hole circle locked (at 0 0) (size 6.4 6.4) (drill 6.4) (layers "*.Cu" "*.Mask") (tstamp 5bc0749b-c17e-4986-86da-ff2ba1940f3d))
+    (pad "" np_thru_hole circle locked (at 0 0) (size 7.2 7.2) (drill 7.2) (layers "*.Cu" "*.Mask") (tstamp 5bc0749b-c17e-4986-86da-ff2ba1940f3d))
   )
 
   (footprint "MountingHole:MountingHole_3.2mm_M3" locked (layer "F.Cu")
@@ -284,7 +284,7 @@
       (stroke (width 0.15) (type solid)) (fill none) (layer "Cmts.User") (tstamp a883a47f-b5e1-4cab-be0b-58a6579ccd75))
     (fp_circle (center 0 0) (end 6.65 0)
       (stroke (width 0.05) (type solid)) (fill none) (layer "F.CrtYd") (tstamp 4d9b4c6f-1492-46fa-9dc1-5a29eeefb8cc))
-    (pad "" np_thru_hole circle locked (at 0 0) (size 6.4 6.4) (drill 6.4) (layers "*.Cu" "*.Mask") (tstamp d6075fd6-c031-4fdd-a9c6-133715117139))
+    (pad "" np_thru_hole circle locked (at 0 0) (size 7.2 7.2) (drill 7.2) (layers "*.Cu" "*.Mask") (tstamp d6075fd6-c031-4fdd-a9c6-133715117139))
   )
 
   (footprint "MountingHole:MountingHole_3.2mm_M3" locked (layer "F.Cu")
