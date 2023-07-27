@@ -20,14 +20,14 @@ In this repository, I digitalized HAGIWOs sketched schematics in Kicad and then 
 **CHANGELOG** <br/>
 <br/>
 
-**rev0.2.1** <br/>
+**rev 0.2.1** <br/>
 <ul>
 <li>I adjusted the drilling diameter to 7.2mm to fit the threads of some potentiometers, e.g., t18. The previous front panel was made for rv09 potentiometers, which don't have a larger thread drilling.</li>
 <li>the main pcb stays the same as 0.2.0</li>
 </ul>
 <br/>
 
-**rev0.2** <br/>
+**rev 0.2** <br/>
 <ul>
 <li> !!! changed pin order on connector </li>
 <li> 10 pin connector instead of 16 pin</li>
@@ -40,7 +40,7 @@ In this repository, I digitalized HAGIWOs sketched schematics in Kicad and then 
 </ul>
 <br/>
 
-**rev0.1** <br/>
+**rev 0.1** <br/>
 <ul>
 <li>first layout PRODUCED and working</li>
 </ul>
