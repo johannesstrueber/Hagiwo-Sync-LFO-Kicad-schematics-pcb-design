@@ -223,11 +223,11 @@ void loop()
   // TOP値指定
   // 8000000 / 1 / 160 = 50000
   // or 4900000 / 1 / 160 = 30625
-  OCR1A = (unsigned int)(160);
-  OCR1B = (unsigned int)(160 * duty * amp_rate);
+  OCR1A = (unsigned int)(250);
+  OCR1B = (unsigned int)(250 * duty * amp_rate);
 
-  OCR2A = (unsigned int)(160);
-  OCR2B = (unsigned int)(160 * duty * amp_neg_rate + 160);
+  OCR2A = (unsigned int)(250);
+  OCR2B = (unsigned int)(250 * duty * amp_neg_rate + 250);
 
   analogWrite(PWMOut, OCR1B);
   analogWrite(PWMInv, OCR2B);
